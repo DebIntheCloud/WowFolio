@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
   <title>WowFolio - A Simple & Clean Portfolio Template For Developers</title>
   <meta name="description" content="Wowfolio - A Simple & Clean Portfolio Template For Developers" />
 </head>
@@ -18,20 +18,20 @@
   <header class="main-header">
     <div class="main-header__logo-container">
       <div class="main-header__logo-img-cont">
-        <img
-          src="https://d33wubrfki0l68.cloudfront.net/32c48e23e828c42a99a37db81e2a91d7c8eed4de/d134a/assets/png/ram-maheshwari.png"
-          alt="logo Image" class="main-header__logo-img" />
+        <img 
+        src="assets/deb-photo.png" alt="Debora Pichel Rois" class="main-header__logo-img" />
+
       </div>
-      <h4 class="main-header__logo-text">John Anderson</h4>
+      <h4 class="main-header__logo-text">Debora Pichel</h4>
     </div>
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
         <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
         <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
         <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> Projects </a>
+          <a href="#projects"> Projects </a>
         </li>
-        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+        <li class="main-header__navigation-link"><a href="#contact"> Contact </a></li>
       </ul>
     </nav>
     <div class="main-header__sm-scr-nav-btn">
@@ -58,7 +58,7 @@
         </li>
       </ul>
     </div>
-    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+
   </header>
 
   <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
@@ -75,11 +75,14 @@
         <h1 class="heading-primary home-hero__heading-primary">
           <span class="heading-primary__sm"> Hello 👋</span>
           <span class="heading-primary__main">
-            I'm John Anderson! A Web Developer Building Awesome Webapps And Websites That Powers The Internet
+            I'm Debora Pichel! A Web Developer Building Awesome Webapps And Websites That Powers The Internet
           </span>
         </h1>
-        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
-        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+        <a href="#projects" class="btn btn-theme home-hero__btn-theme">Projects</a>
+        <a href="#contact" class="btn btn-inv home-hero__btn-theme">Contact</a>        
+        <div class="clouds">
+          <img src="assets/cloud1.png" class="cloud cloud--1" />
+        </div>        
       </div>
     </div>
   </section>
@@ -87,6 +90,8 @@
     <div class="main-container">
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> About 🦄</span>
+        <img src="assets/cloud2.png" class="cloud cloud--2" />
+        <img src="assets/cloud3.png" class="cloud cloud--3" />
         <span class="heading-secondary__main">
           Here you will find more information about me, what I do, and list of my current skills in programming
       </h2>
@@ -98,28 +103,16 @@
             </h3>
             <p class="text-primary about__text-primary">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                Hi, I’m Deb, originally from Spain and moved to the US four years ago. My passion for technology started in my teens when I tinkered with a monochrome gas-plasma screen computer my father brought home. That curiosity has shaped my journey ever since.
               </span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                For nearly nine years, I worked in the corporate world, gaining experience in business, accounting, and translation. My diverse background has taught me the importance of clear communication and problem-solving, skills I now apply to my web development work.
               </span>
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Error, aliquid! Itaque corrupti magnam fugiat mollitia labore
-                magni saepe veritatis voluptatum alias fugit. Explicabo
-                ducimus sequi aut corporis odio repellendus? Lorem ipsum dolor
-                sit amet
+                A few years ago, I reignited my love for coding and set out to become a web developer. Through courses and hands-on projects, I’ve developed a strong foundation in web development, and I’m excited to continue growing. This portfolio showcases my most recent projects, and I'm excited to take on new challenges, contribute to a collaborative team, and continue to grow as a developer.
               </span>
             </p>
-            <button class="btn btn-theme about__btn-theme">Projects</button>
+            <a href="#projects" class="btn btn-theme about__btn-theme">Projects</a>
           </div>
           <div class="about__skill-info">
             <h3 class="heading-quaternary about__heading-quaternary">
@@ -133,14 +126,19 @@
               <li class="about__skill">node</li>
               <li class="about__skill">git</li>
               <li class="about__skill">vscode</li>
-              <li class="about__skill">linux</li>
-              <li class="about__skill">react</li>
-              <li class="about__skill">node</li>
-              <li class="about__skill">git</li>
-              <li class="about__skill">vscode</li>
-              <li class="about__skill">linux</li>
-              <li class="about__skill">javascript</li>
-              <li class="about__skill">react</li>
+              <li class="about__skill">sublime text</li>
+              <li class="about__skill">postgreSQL</li>
+              <li class="about__skill">mongodb</li>
+              <li class="about__skill">heroku</li>
+              <li class="about__skill">netlify</li>
+              <li class="about__skill">nextjs</li>
+              <li class="about__skill">figma</li>
+              <li class="about__skill">tailwind</li>
+              <li class="about__skill">vercel</li>
+              <li class="about__skill">trello</li>  
+              <li class="about__skill">java</li>
+              <li class="about__skill">junit</li>
+              <li class="about__skill">tdd testing</li>      
             </ul>
           </div>
         </div>
@@ -162,7 +160,8 @@
         <i class="devicon-react-original"></i>
       </li>
       <li class="skills-showcase__list-item">
-        <i class="devicon-sass-original"></i>
+        <i class="devicon-tailwindcss-plain"></i>
+          
       </li>
       <li class="skills-showcase__list-item">
         <i class="devicon-nodejs-plain"></i>
@@ -172,161 +171,334 @@
       </li>
 
       <li class="skills-showcase__list-item">
-        <i class="devicon-android-plain"></i>
+        <i class="devicon-postgresql-plain"></i>
       </li>
       <li class="skills-showcase__list-item">
-        <i class="devicon-python-plain"></i>
+        <i class="devicon-mongodb-plain"></i>
       </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-heroku-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nextjs-original-wordmark"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-figma-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-trello-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-java-plain"></i>
+      </li>
+
     </ul>
   </section>
   <section id="projects" class="projects main-section">
     <div class="main-container">
       <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__sm"> 
+          <a href="#projects">Projects 🛠️</a>
+        </span>
         <span class="heading-secondary__main">
-          Here you will find some of the personal and clients projects that I created with the project details
+          Here you will find some of the personal projects that I created with the tech stack I used and a brief description
         </span>
       </h2>
       <div class="main-section__content">
         <div class="projects__list">
+          <!-- <div class="projects__list-item"> need to verify this one, it's not deploying correctly
+            <div class="projects__list-item-left">
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num">1</span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
+              </div>
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/robofriends.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
+          
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary">Robofriends</h3>
+              <p class="text-primary">
+                <span>Feeling lonely? Look no further! These metal guys are just what you were looking for.</span>
+                <span>Find a friend that does not complain about how much you bore them, is always available and will not steal your crush!</span>
+              </p>
+              <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>JavaScript, Html, Css and React.</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="https://minglingwithrobots.netlify.app/" target="_blank" class="btn btn-theme">
+                Live Link
+              </a>
+              <a href="https://github.com/DebIntheCloud/robofriends.git" target="_blank" class="btn btn-inv">
+                Code Link
+              </a>
+              </div>
+            </div>
+          </div> -->
+
           <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 1 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+            <div class="projects__list-item-left">
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 2 </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
               </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/jaggonaut.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
 
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary">Jaggonaut Gym</h3>
+              <p class="text-primary">
+                <span>The only workout you will ever need to become the mass monstruosity you always dreamed to be!</span>
+                <span>Follow these easy steps to become the next Hulk</span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
+              <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>JavaScript, React, Tailwind CSS, Vite.</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="https://jaggonaut-fit.netlify.app/" target="_blank"  class="btn btn-theme">
                 Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              </a>
+              <a href="https://github.com/DebIntheCloud/swoley-fit.git" target="_blank" class="btn btn-inv">
+              Code Link
+              </a>
+              </div>
             </div>
           </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-          </div>
+          
           <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 3 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
+            <div class="projects__list-item-left">
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 3 </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
               </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/apod.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
 
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
-                </span>
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary">APOD for NASA enthusiasts</h3>
+              <p class="text-primary">
+                <span>Do you spend the hours daydreaming and looking at the sky? Are you a hopeless romantic or a space-geek?</span>
+                <span>Now you can check this site daily and see awesome pictures taken by NASA's technology!</span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
+              <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>JavaScript, React, CSS, Vite, uses NASA'S API</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="https://apod-react-fetch.netlify.app" target="_blank"  class="btn btn-theme">
                 Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
+              </a>
+              <a href="https://github.com/DebIntheCloud/nasa-react-app.git" target="_blank" class="btn btn-invv">
+              Code Link
+              </a>
+              </div>
             </div>
           </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
+
+          <div class="projects__list-item">
+            <div class="projects__list-item-left">                    
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 4 </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
+              </div>
               <div class="projects__list-item-img-cont">
+                <img src="./assets/nodejs.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
+
+            <div class="projects__list-item-details">
+              <h3 class="heading-tertiary">NodeJS Express MongoDB Blog</h3>
+              <p class="text-primary">
+                <span>Just a simple blog built with the MERN combo</span>
+              </p>
+              <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>Node.js, Express, MongoDB, EJS and CSS</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="https://nodejs-blog-ol7v.onrender.com/" target="_blank"  class="btn btn-theme">
+                Live Link
+              </a>
+              <a href="https://github.com/DebIntheCloud/Nodejs-Blog.git" target="_blank" class="btn btn-inv">
+              Code Link
+              </a>
+              </div>
+            </div>
+          </div>
+<!-- 
+          need to verify this one, its not deploying correctly -->
+          <!-- <div class="projects__list-item">
+            <div class="projects__list-item-left">  
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 5 </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
+              </div>
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/chuck.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
+
+              <div class="projects__list-item-details">
+                <h3 class="heading-tertiary">ChuckNorRandom</h3>
+                <p class="text-primary">
+                  <span>Just Chuck Norris deliver a load of wisdom.</span>
+                  <span>Pay attention or that is not the only thing he will deliver.</span>
+                </p>
+                <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>JavaScript, CSS and Html</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="https://chuck-delivers-his-wisdom.netlify.app" target="_blank"  class="btn btn-theme">
+                Live Link
+              </a>
+              <a href="https://github.com/DebIntheCloud/ChuckNorRandom_files.git" target="_blank" class="btn btn-inv projects__btn-inv">
+               Code Link
+              </a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="projects__list-item">
+            <div class="projects__list-item-left">  
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 6 </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
+              </div>
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/todolist.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
+
+              <div class="projects__list-item-details">
+                <h3 class="heading-tertiary">React To-do List</h3>
+                <p class="text-primary">
+                  <span>Just your regular CRUD app with a retro touch</span>
+                </p>
+                <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>React.js, Vite, JavaScript, CSS and Html</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="https://reactjs-listoftodos.netlify.app/" target="_blank"  class="btn btn-theme">
+                Live Link
+              </a>
+              <a href="https://github.com/DebIntheCloud/reactjs-todolist" target="_blank" class="btn btn-inv">
+               Code Link
+              </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__list-item">
+            <div class="projects__list-item-left">  
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 7 </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
+              </div>
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/deza.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+            </div>
+
+              <div class="projects__list-item-details">
+                <h3 class="heading-tertiary">Deza Interactive Travel Site</h3>
+                <p class="text-primary">
+                  <span>UNDER CONSTRUCTION! This project is an interactive map of Deza County in Galicia, Spain, created using Leaflet.js. The map allows users to explore various points of interest in the region. </span>
+                </p>
+                <h3 class="heading-tertiary">Stack used</h3>
+                <p class="text-primary">
+                  <span>Leaflet, Html, Tailwind, JavaScript</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="" target="_blank"  class="btn btn-theme">
+                Live Link
+              </a>
+              <a href="https://github.com/DebIntheCloud/deza-travel-map" target="_blank" class="btn btn-inv">
+              Code Link
+              </a>
+              </div>
+            </div>
+        </div>
+
+        <div class="projects__list-item">
+          <div class="projects__list-item-left">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 8 </span>
+              <span class="projects__list-item-count-line"></span>
+              <span class="projects__list-item-count-end-dot"></span>
+            </div>
+            <div class="projects__list-item-img-cont">
+              <img src="./assets/construction.jpg" alt="Project Image" class="projects__list-item-img" />
+            </div>
+          </div>
+
+          <div class="projects__list-item-details">
+            <h3 class="heading-tertiary">Walmart Clone</h3>
+            <p class="text-primary">
+              <span> UNDER CONSTRUCTION! Walmart clone that Scrapes Real Walmart Product Data to display Real Product information straight from Walmart!</span>
+            </p>
+            <h3 class="heading-tertiary">Stack used</h3>
+              <p class="text-primary">
+                <span>Next.js 15, React, Tailwind CSS 4, TypeScript, Zustand, ShadCN UI, and Clerk for auth, using the Oxylabs API for real-time Walmart data and will be deployed on Vercel.</span>
+              </p>
+            <div class="projects__list-item-buttons">
+            <a href="" target="_blank"  class="btn btn-theme">
+              Live Link
+            </a>
+            <a href="https://github.com/DebIntheCloud/swoley-fit.git" target="_blank" class="btn btn-inv">
+            Code Link
+            </a>
+            </div>
+          </div>
+        </div>
+
+         <!-- <div class="projects__list-item-count">
+            <span class="projects__list-item-count-num"> 6 </span>
+            <span class="projects__list-item-count-line"> </span>
+            <span class="projects__list-item-count-end-dot"> </span>
+          </div>
+          <div class="projects__list-item-details">
+            <div class="projects__list-item-img-cont">
                 <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" />
               </div>
               <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Project Name
+                Face Recognition App
               </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Error, aliquid! Itaque corrupti magnam fugiat mollitia
-                  labore magni saepe veritatis voluptatum alias fugit.
-                  Explicabo ducimus
+                  Not sure if you are seeing a face or something else? This app will help you out.
                 </span>
-                <!-- <br />
-                  <br /> -->
                 <span>
-                  sapiente aut corporis odio repellendus? Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit
+                  Paste the link to any image and the app will find the faces on it.
                 </span>
               </p>
-              <button class="btn btn-theme projects__btn-theme">
+              <a href="need to paste link from herok" target="_blank"  class="btn btn-theme projects__btn-theme">
                 Live Link
-              </button>
-              <button class="btn btn-inv projects__btn-inv">Code Link</button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 4 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
+              </a>
+            <a href="https://github.com/DebIntheCloud/smart-brain.git" target="_blank" class="btn btn-inv projects__btn-inv">
+              Code Link
+            </a>
+          </div> -->
+
+
+
+        </div>
             </div>
           </div>
         </div>
@@ -343,22 +515,45 @@
       </h2>
       <div class="main-section__content">
         <div class="contact__form-cont">
-          <form class="contact__form">
+          <!-- ✅ UPDATED FORM TAG -->
+          <form 
+            class="contact__form"
+            action="https://formspree.io/f/manepppj"
+            method="POST"
+            >
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+              <input 
+              type="text"
+              name="name" 
+              placeholder="Enter Your Name" 
+              class="contact__form-field-input"
+              required 
+              />
             </div>
             <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+              <label for="email" class="contact__form-field-label">Email</label>
+              <input
+              type="email"
+              name="email" 
+              placeholder="Enter Your Email" 
+              class="contact__form-field-input" 
+              required
+              />
             </div>
             <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact__form-field-input"></textarea>
+              <label for="message" class="contact__form-field-label">Message</label>
+              <textarea 
+                name="message"
+                placeholder="Enter Your Message" 
+                class="contact__form-field-input" 
+                cols="30" rows="10"
+                required
+              ></textarea>
             </div>
             <button type="submit" class="contact__form-submit">Submit</button>
           </form>
+
           <div class="contact__form-visual"></div>
         </div>
       </div>
@@ -383,7 +578,7 @@
         </ul>
         <div class="main-footer__mid-line"></div>
         <div class="main-footer__socials">
-          <a href="#" class="main-footer__social-link">
+          <a href="https://github.com/DebIntheCloud" class="main-footer__social-link">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
               alt="" class="main-footer__social-link-icon" />
@@ -410,13 +605,37 @@
         <p class="main-footer__bottom-txt">
           <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
           <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
-          <script>document.write(new Date().getFullYear())</script>. Made by
-          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+          <script>document.write(new Date().getFullYear())</script>. 
         </p>
       </div>
     </div>
   </footer>
   <script src="./script.js"></script>
+
+  <script>
+
+    const form = document.querySelector(".contact__form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          form.innerHTML = "<p style='font-size: 2rem;'>Thanks for your message! 💌</p>";
+        } else {
+          form.innerHTML = "<p style='font-size: 2rem; color: red;'>Oops! Something went wrong. Try again?</p>";
+        }
+      });
+    });
+
+  </script>
 </body>
 
 </html>
