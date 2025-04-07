@@ -474,6 +474,21 @@ section {
   }
 }
 
+.about__btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: flex-start; /* aligns left */
+}
+
+.about__btn-group .btn {
+  flex: 1 1 200px; /* responsive sizing */
+  text-align: center;
+  width: 100%;
+}
+
+
 .about__heading-quaternary {
   margin-bottom: 3rem;
 }
