@@ -31,6 +31,7 @@
         <li class="main-header__navigation-link">
           <a href="#projects"> Projects </a>
         </li>
+        <li class="main-header__navigation-link"><a href="#edits"> Photo Edits </a></li>
         <li class="main-header__navigation-link"><a href="#contact"> Contact </a></li>
       </ul>
     </nav>
@@ -52,6 +53,9 @@
         </li>
         <li>
           <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+            <a class="main-header__navigation-link"><a href="#edits"> Photo Edits </a>
         </li>
         <li>
           <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
@@ -129,7 +133,9 @@
               <li class="about__skill">css</li>
               <li class="about__skill">javascript</li>
               <li class="about__skill">react</li>
-              <li class="about__skill">node</li>
+              <li class="about__skill">photoshop</li>
+              <li class="about__skill">lightroom</li>
+              <li class="about__skill">adobe express</li>
               <li class="about__skill">git</li>
               <li class="about__skill">Microsoft Power Automate</li>
               <li class="about__skill">API Integrations </li>
@@ -184,6 +190,15 @@
         <i class="devicon-mongodb-plain"></i>
       </li>
       <li class="skills-showcase__list-item">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="skills-showcase__icon">
+          <title>Adobe Lightroom</title>
+          <path d="M0 0v24h24V0H0zm17.168 7.43c0 .172-.132.276-.317.276-.177 0-.308-.104-.308-.276s.13-.285.317-.285c.177 0 .308.104.308.285zm-.628 8.8h-1.082V8.787h1.082V16.23zm-2.235 0h-3.52V8.787h1.073v6.923h2.446v.52zm-5.084 0H5.72V8.787h1.07v6.923h2.43v.52z"/>
+        </svg>
+      </li>
+      <li class="skills-showcase__list-item"></li>
+        <i class="devicon-photoshop-plain"></i>
+      </li>  
+      <li class="skills-showcase__list-item">
         <i class="devicon-heroku-original"></i>
       </li>
       <li class="skills-showcase__list-item">
@@ -216,7 +231,7 @@
       </h2>
       <div class="main-section__content">
         <div class="projects__list">
-          <!-- <div class="projects__list-item"> need to verify this one, it's not deploying correctly
+          <div class="projects__list-item"> need to verify this one, it's not deploying correctly
             <div class="projects__list-item-left">
               <div class="projects__list-item-count">
                 <span class="projects__list-item-count-num">1</span>
@@ -247,9 +262,9 @@
               </a>
               </div>
             </div>
-          </div> -->
+          </div> 
 
-          <!-- <div class="projects__list-item">
+          <div class="projects__list-item">
             <div class="projects__list-item-left">
               <div class="projects__list-item-count">
                 <span class="projects__list-item-count-num"> 2 </span>
@@ -259,7 +274,7 @@
               <div class="projects__list-item-img-cont">
                 <img src="./assets/jaggonaut.jpg" alt="Project Image" class="projects__list-item-img" />
               </div>
-            </div>
+            </div> 
 
             <div class="projects__list-item-details">
               <h3 class="heading-tertiary">Jaggonaut Gym</h3>
@@ -280,7 +295,7 @@
               </a>
               </div>
             </div>
-          </div> -->
+          </div> 
           
           <div class="projects__list-item">
             <div class="projects__list-item-left">
@@ -315,6 +330,41 @@
             </div>
           </div>
 
+          <div class="projects__list-item">
+            <div class="projects__list-item-left">
+              <div class="projects__list-item-count">
+                <span class="projects__list-item-count-num"> 1a </span>
+                <span class="projects__list-item-count-line"></span>
+                <span class="projects__list-item-count-end-dot"></span>
+              </div>
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/edits/buildingsidebyside.JPG" alt="Lightroom Before/After Edits" class="projects__list-item-img" />
+              </div>
+            </div>
+
+          <div class="projects__list-item-details">
+              <h3 class="heading-tertiary">Photo Edits – Lightroom Before/After</h3>
+                  <div class="projects__tags">
+                    <span class="tag tag--visual">Visual</span>
+                  </div>
+              <p class="text-primary">
+                <span>RAW-to-final transformations focused on natural color, clean contrast, and subtle selective masking (radial, linear, color range).</span>
+                <span>Includes architecture, landscape, and food examples with minimal but purposeful edits.</span>
+              </p>
+              <h3 class="heading-tertiary">Tools used</h3>
+                <p class="text-primary">
+                  <span>Lightroom (masks, HSL, tone curve, dehaze, clarity), basic geometry correction.</span>
+                </p>
+              <div class="projects__list-item-buttons">
+              <a href="#edits" class="btn btn-theme">
+              View Gallery
+              </a>
+              <a href="https://github.com/DebIntheCloud/customer-onboarding-zaps" target="_blank" class="btn btn-inv">
+              Github Repo
+              </a>
+              </div>
+            </div>
+          </div>
           
           <div class="projects__list-item">
             <div class="projects__list-item-left">
@@ -614,6 +664,65 @@
       </div>
     </div>
   </section>
+
+    <!-- ===== Lightroom Edits Gallery ===== -->
+<section id="edits" class="main-section edits">
+  <div class="main-container">
+    <h2 class="heading-secondary">
+      <span class="heading-secondary__sm">Lightroom Photo Edits 📸</span>
+      <span class="heading-secondary__main">Before/after and final exports</span>
+    </h2>
+
+    <div class="edits__grid">
+      <!-- Replace filenames with yours in assets/edits -->
+      <figure class="edits__item" data-full="assets/edits/bridgeafter.jpg" data-caption="Bridge — tonal balance & depth">
+        <img src="assets/edits/bridgeafter.jpg" alt="Bridge edit" class="edits__thumb" loading="lazy">
+        <figcaption>Bridge</figcaption>
+      </figure>
+
+      <figure class="edits__item" data-full="assets/edits/buildingafter.jpg" data-caption="Architecture — geometry & dehaze">
+        <img src="assets/edits/buildingafter.jpg" alt="Building edit" class="edits__thumb" loading="lazy">
+        <figcaption>Building</figcaption>
+      </figure>
+
+      <figure class="edits__item" data-full="assets/edits/lakeafter.jpg" data-caption="Lake — color range mask & reflections">
+        <img src="assets/edits/lakeafter.jpg" alt="Lake edit" class="edits__thumb" loading="lazy">
+        <figcaption>Lake</figcaption>
+      </figure>
+
+      <figure class="edits__item" data-full="assets/edits/hillafter.jpg" data-caption="Hill — radial light on subject">
+        <img src="assets/edits/hillafter.jpg" alt="Hill edit" class="edits__thumb" loading="lazy">
+        <figcaption>Hill</figcaption>
+      </figure>
+
+      <figure class="edits__item" data-full="assets/edits/bagelafter.jpg" data-caption="Food — clarity & warmth">
+        <img src="assets/edits/bagelafter.jpg" alt="Bagel edit" class="edits__thumb" loading="lazy">
+        <figcaption>Bagel</figcaption>
+      </figure>
+
+      <figure class="edits__item" data-full="assets/edits/saladafter.jpg" data-caption="Food — texture & highlights">
+        <img src="assets/edits/saladafter.jpg" alt="Salad edit" class="edits__thumb" loading="lazy">
+        <figcaption>Salad</figcaption>
+      </figure>
+
+      <!-- Example GIF entry if you have one:
+      <figure class="edits__item" data-full="assets/edits/bridge.gif" data-caption="Bridge — quick process GIF">
+        <img src="assets/edits/bridge.gif" alt="Bridge GIF" class="edits__thumb" loading="lazy">
+        <figcaption>Bridge (GIF)</figcaption>
+      </figure> -->
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous">‹</button>
+    <img class="lightbox__img" alt="">
+    <div class="lightbox__caption"></div>
+    <button class="lightbox__nav lightbox__next" aria-label="Next">›</button>
+  </div>
+</section>
+
   <section id="contact" class="contact main-section">
     <div class="main-container">
       <h2 class="heading-secondary">
@@ -721,6 +830,8 @@
   </footer>
   <script src="./script.js"></script>
 
+
+
   <script>
 
     const form = document.querySelector(".contact__form");
@@ -745,6 +856,28 @@
     });
 
   </script>
+
+  <script>
+(function(){
+  const items=[...document.querySelectorAll('.edits__item')];
+  const lb=document.querySelector('.lightbox');
+  const img=document.querySelector('.lightbox__img');
+  const cap=document.querySelector('.lightbox__caption');
+  const c=document.querySelector('.lightbox__close');
+  const p=document.querySelector('.lightbox__prev');
+  const n=document.querySelector('.lightbox__next');
+  let i=-1;
+  function openAt(k){ i=k; const el=items[i]; img.src=el.dataset.full; img.alt=el.querySelector('img').alt||''; cap.textContent=el.dataset.caption||''; lb.classList.add('is-open'); lb.setAttribute('aria-hidden','false'); }
+  function close(){ lb.classList.remove('is-open'); lb.setAttribute('aria-hidden','true'); img.src=''; }
+  function prev(){ openAt((i-1+items.length)%items.length); }
+  function next(){ openAt((i+1)%items.length); }
+  items.forEach((el,idx)=>{ el.addEventListener('click',()=>openAt(idx)); el.tabIndex=0; el.addEventListener('keydown',e=>{if(e.key==='Enter')openAt(idx)}) });
+  c.addEventListener('click',close); p.addEventListener('click',prev); n.addEventListener('click',next);
+  lb.addEventListener('click',e=>{ if(e.target===lb) close(); });
+  document.addEventListener('keydown',e=>{ if(!lb.classList.contains('is-open')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') prev(); if(e.key==='ArrowRight') next(); });
+})();
+</script>
+
 </body>
 
 </html>
