@@ -1142,3 +1142,60 @@ section {
   position: relative;
   z-index: 1;
 }
+
+.edits__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.edits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0e0e0e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.edits__thumb {
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  transition: transform 0.25s ease;
+}
+
+.edits__thumb:hover {
+  transform: scale(1.03);
+}
+
+.edits__item figcaption {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Center items in the grid */
+.edits__grid {
+  justify-items: center;       /* centers each figure horizontally */
+}
+
+/* Constrain each figure's width */
+.edits__item {
+  width: 100%;
+  max-width: 520px;            /* pick 420–560px; adjust to taste */
+  margin: 0 auto;              /* belt-and-suspenders centering */
+}
+
+/* Make sure images scale nicely and stay centered */
+.edits__thumb {
+  display: block;
+  width: 100%;
+  height: auto;                /* keep aspect ratio */
+  object-fit: contain;         /* don’t crop */
+}
