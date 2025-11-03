@@ -57,6 +57,10 @@ a {
   color: inherit;
 }
 
+/* Global guard: images never exceed their containers */
+img { max-width: 100%; height: auto; display: block; }
+
+
 /* Utils */
 
 .btn {
@@ -1189,6 +1193,39 @@ section {
 .edits__thumb:hover {
   transform: scale(1.03);
 }
+
+/* Make designs images responsive (prevents overflow/overlap) */
+.designs__thumb {
+  display: block;
+  width: 100%;
+  height: auto;        /* keeps aspect ratio */
+  object-fit: contain; /* never crop inside the card */
+  max-width: 520px;    /* optional: match your edits max width */
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+  margin-bottom: 0.75rem;
+}
+
+/* Keep cards tidy and consistent height-wise */
+.designs__grid {
+  justify-items: center;
+  align-items: start;
+}
+
+.designs__item {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  overflow: hidden;    /* guards against odd oversized assets */
+}
+
+.designs__item figcaption {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
 
 .edits__item figcaption {
   font-size: 1rem;
