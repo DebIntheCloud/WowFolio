@@ -1,0 +1,6 @@
+services:
+  wowfolio: 
+    build: .
+    ports: 
+    - "8001:80"
+    
